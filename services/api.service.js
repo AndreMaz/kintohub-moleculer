@@ -22,5 +22,16 @@ module.exports = {
 		assets: {
 			folder: "public"
 		}
+	},
+
+
+	actions: {
+		test: {
+			handler() {
+				return {
+					test: `Hello API @ ${this.broker.nodeID}`
+				}
+			}
+		}
 	}
 };
